@@ -1,0 +1,16 @@
+# 依赖说明
+# 安装：pip install -r requirements.txt
+#
+# 本项目已在本机 Python 3.11.4 + torch 2.14.1 + CUDA 13.2（RTX 4070 Laptop）验证通过；
+# 也支持纯 CPU 运行（加 --device cpu），无需任何额外改动。
+
+ultralytics==8.4.177      # 提供 YOLO 模型加载与 predict 接口（自带 pose 关键点解析）
+opencv-python>=4.8.0      # 视频读写与绘制
+numpy>=1.24               # 数组运算
+
+# 深度学习后端：torch 由 ultralytics 自动安装，但显式写出来便于复现。
+#  CPU 版：pip install torch torchvision
+#  GPU 版（CUDA 12.x/13.x）：参考 https://pytorch.org/get-started/locally/
+#  本机 GPU 版实际使用：pip install torch torchvision --index-url https://download.pytorch.org/whl/cu132
+torch>=2.0
+torchvision>=0.15
