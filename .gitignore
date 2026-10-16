@@ -1,0 +1,38 @@
+# ---- 模型权重（作业统一提供，体积大，不进 Git）----
+best.pt
+best.onnx
+*.pt
+*.onnx
+*.pth
+
+# ---- 视频素材与推理结果（体积大，不进 Git）----
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# ---- 推理输出 ----
+runs/
+output/
+results/
+*_result.mp4
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
